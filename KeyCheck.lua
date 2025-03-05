@@ -68,16 +68,6 @@ local HelpTab = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-HelpTab:AddButton({
-	Name = "Telegram",
-	Callback = function()
-		game.StarterGui:SetCore("SendNotification", {
-			Title = "@TwoHubs",
-			Text = "This is telegram :D",
-			Duration = 7
-		})
-  	end    
-})
 
 CheckKeyTab:AddTextbox({
 	Name = "Enter Key",
@@ -96,7 +86,7 @@ CheckKeyTab:AddButton({
                 NektoHub()
                 CorrectKeyNotif()
                 else
-                    InCorrectKeyNotif()
+                    game.Players.LocalPlayer:Kick("Invalid key!")
             end
                 
   	end    
