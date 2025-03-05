@@ -29,7 +29,7 @@ local TablePlace = {14437001043}
 
     if table.find(TablePlace,game.PlaceId) then
         getgenv().Game = "RM"
-        --loadstring(game:HttpGet("https://raw.githubusercontent.com/werumZov/Nektohub/refs/heads/zovchik/NektoHub.lua"))()   
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/werumZov/Nektohub/refs/heads/zovchik/NektoHub.lua"))()   
  
     
     else
