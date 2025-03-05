@@ -19,7 +19,6 @@
 
 function NektoHub()
 repeat task.wait() until game:IsLoaded()
-local TablePlace = {14437001043}
     game:GetService("StarterGui"):SetCore("SendNotification",{
         Title = "Loading...", -- Required
         Text = "Wait...", -- Required
@@ -27,12 +26,12 @@ local TablePlace = {14437001043}
         Duration = 15
     })
 
-    if table.find(TablePlace) then
+    if _G.KeyInput == _G.Key then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/werumZov/Nektohub/refs/heads/zovchik/NektoHub.lua"))()   
  
     
     else
-        game.Players.LocalPlayer:Kick("not Support")
+        game.Players.LocalPlayer:Kick("Invalid key!")
     end
 end
 
@@ -62,6 +61,22 @@ _G.KeyInput = 'string'
 	Name = "Check Key",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
+})
+
+local HelpTab = Window:MakeTab({
+	Name = "Help",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+HelpTab:AddButton({
+	Name = "Telegram",
+	Callback = function()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "@TwoHubs",
+			Text = "This is telegram :D",
+			Duration = 7
+		})
+  	end    
 })
 
 CheckKeyTab:AddTextbox({
