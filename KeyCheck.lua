@@ -27,8 +27,7 @@ local TablePlace = {14437001043}
         Duration = 15
     })
 
-    if table.find(TablePlace,game.PlaceId) then
-        getgenv().Game = "RM"
+    if table.find(TablePlace) then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/werumZov/Nektohub/refs/heads/zovchik/NektoHub.lua"))()   
  
     
