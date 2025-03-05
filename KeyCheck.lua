@@ -7,7 +7,7 @@
 
 
 
- local Window = OrionLib:MakeWindow({Name = "KeySystem", HidePremium = false, SaveConfig = true, ConfigFolder = "OKeyTEst", IntroText = "Welcome!"})
+ local Window = OrionLib:MakeWindow({Name = "KeySystem 1.0", HidePremium = false, SaveConfig = true, ConfigFolder = "OKeyTEst", IntroText = "Welcome!"})
 
  OrionLib:MakeNotification({
 	Name = "Logged!",
