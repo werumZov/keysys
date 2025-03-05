@@ -69,6 +69,14 @@ local HelpTab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+HelpTab:AddButton({
+	Name = "@TwoHubs--Telegram",
+	Callback = function()
+      		
+                
+  	end    
+})
+
 CheckKeyTab:AddTextbox({
 	Name = "Enter Key",
 	Default = "Enter Key",
